@@ -1,34 +1,37 @@
 import React from 'react';
-import MagicElement from '../components/Element';
+import { Link } from 'react-router-dom';
 import elementsData from '../API/elements.json';
 
-
-
 const AllElements = () => {
-    const coreElements = elementsData.elements.filter((element) => element.type === 'core');
-    const primeElements = elementsData.elements.filter((element) => element.type === 'prime');
-  
-    return (
+  const primeElements = elementsData.elements.filter(
+    (element) => element.type === 'prime'
+  );
+  const coreElements = elementsData.elements.filter(
+    (element) => element.type === 'core'
+  );
+
+  return (
+    <div>
       <div>
-        <div>
-          <h2>Core Elements</h2>
-          <div className="element-group">
-            {coreElements.map((element) => (
-              <MagicElement key={element.id} element={element} />
-            ))}
-          </div>
-        </div>
-        <div>
-          <h2>Prime Elements</h2>
-          <div className="element-group">
-            {primeElements.map((element) => (
-              <MagicElement key={element.id} element={element} />
-            ))}
-          </div>
-        </div>
+        <h2>Prime Elements</h2>
+        {primeElements.map((element) => (
+          <Link key={element.id} to={`/element/${element.id}`}>
+            <img src={element.image} alt={element.name} />
+            <p>{element.name}</p>
+          </Link>
+        ))}
       </div>
-    );
-  };
-  
-  export default AllElements;
-  
+      <div>
+        <h2>Core Elements</h2>
+        {coreElements.map((element) => (
+          <Link key={element.id} to={`/element/${element.id}`}>
+            <img src={element.image} alt={element.name} />
+            <p>{element.name}</p>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default AllElements;

@@ -3,58 +3,56 @@ import { useParams } from 'react-router-dom';
 import elementsData from '../API/elements.json';
 
 const SingleElement = () => {
-    const { id } = useParams();
-    const element = elementsData.elements.find((element) => element.id === parseInt(id));
-  
-    return (
-      <div>
-        <img src={element.image} alt={element.name} />
-        <h1>{element.name}</h1>
-        <p>{element.description}</p>
-        <h2>Strong Against:</h2>
-        <div className="element-group">
-          {element.strongAgainst.map((strongElementId) => {
-            const strongElement = elementsData.elements.find(
-              (element) => element.id === strongElementId
-            );
-            return (
-              <img
-                key={strongElement.id}
-                src={strongElement.image}
-                alt={strongElement.name}
-              />
-            );
-          })}
-        </div>
-        <h2>Weak Against:</h2>
-        <div className="element-group">
-          {element.weakAgainst.map((weakElementId) => {
-            const weakElement = elementsData.elements.find(
-              (element) => element.id === weakElementId
-            );
-            return (
-              <img key={weakElement.id} src={weakElement.image} alt={weakElement.name} />
-            );
-          })}
-        </div>
-        <h2>Can Boost:</h2>
-        <div className="element-group">
-          {element.canBoost.map((boostElementId) => {
-            const boostElement = elementsData.elements.find(
-              (element) => element.id === boostElementId
-            );
-            return (
-              <img
-                key={boostElement.id}
-                src={boostElement.image}
-                alt={boostElement.name}
-              />
-            );
-          })}
-        </div>
-      </div>
-    );
-  };
-  
-  export default SingleElement;
-  
+  const { id } = useParams();
+
+  const element = elementsData.elements.find(
+    (element) => element.id === parseInt(id)
+  );
+
+  if (!element) {
+    return <p>Element not found.</p>;
+  }
+
+  return (
+    <div>
+      <img src={element.image} alt={element.name} />
+      <h2>{element.name}</h2>
+      <p>{element.description}</p>
+      <h3>Strong Against</h3>
+      {element.strongAgainst.map((id) => {
+        const strongElement = elementsData.elements.find(
+          (element) => element.id === id
+        );
+        return (
+          <div key={strongElement.id}>
+            <img src={strongElement.image} alt={strongElement.name} />
+          </div>
+        );
+      })}
+      <h3>Weak Against</h3>
+      {element.weakAgainst.map((id) => {
+        const weakElement = elementsData.elements.find(
+          (element) => element.id === id
+        );
+        return (
+          <div key={weakElement.id}>
+            <img src={weakElement.image} alt={weakElement.name} />
+          </div>
+        );
+      })}
+      <h3>Can Boost</h3>
+      {element.canBoost.map((id) => {
+        const boostElement = elementsData.elements.find(
+          (element) => element.id === id
+        );
+        return (
+          <div key={boostElement.id}>
+            <img src={boostElement.image} alt={boostElement.name} />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default SingleElement;

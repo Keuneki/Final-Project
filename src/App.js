@@ -1,52 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import MagicBuilder from './pages/MagicBuilder';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AllElements from './pages/AllElements';
 import SingleElement from './pages/SingleElement';
-import Index from './pages/Index';
-import Magic from './pages/Magic';
-import AllClasses from './pages/AllClasses';
-import SingleClass from './pages/SingleClass';
-import BasicClass from './pages/BasicClass';
-import AdvancedClass from './pages/AdvancedClass';
-import MasterClass from './pages/MasterClass';
-import Reviews from './pages/Reviews';
+import AllMagic from './pages/AllMagic';
+import SingleMagic from './pages/SingleMagic';
+import PureMagic from './pages/PureMagic';
+import MixedMagic from './pages/MixedMagic';
+import MagicBuilder from './components/MagicBuilder';
 
 const App = () => {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/magic-builder">Magic Builder</Link>
-            </li>
-            <li>
-              <Link to="/all-elements">All Elements</Link>
-            </li>
-            <li>
-              <Link to="/single-element">Single Element</Link>
-            </li>
-            <li>
-              <Link to="/all-classes">All Classes</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route exact path="/" component={Index} />
-          <Route path="/magic-builder" component={MagicBuilder} />
-          <Route path="/all-elements" component={AllElements} />
-          <Route path="/single-element/:id" component={SingleElement} />
-          <Route exact path="/all-classes" component={AllClasses} />
-          <Route path="/class/:id" component={SingleClass} />
-          <Route path="/basic-class" component={BasicClass} />
-          <Route path="/magic" component={Magic} />
-          <Route path="/advanced-class" component={AdvancedClass} />
-          <Route path="/master-class" component={MasterClass} />
-          <Route path="/reviews" component={Reviews} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/" component={AllElements} />
+        <Route path="/element/:id" component={SingleElement} />
+        <Route exact path="/magic-builder" component={MagicBuilder} />
+        <Route exact path="/magic" component={AllMagic} />
+        <Route path="/magic/:id" component={SingleMagic} />
+        <Route path="/pure-magic" component={PureMagic} />
+        <Route path="/mixed-magic" component={MixedMagic} />
+      </Switch>
     </Router>
   );
 };
