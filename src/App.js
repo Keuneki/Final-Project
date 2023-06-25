@@ -8,6 +8,11 @@ import PureMagic from './pages/PureMagic';
 import MixedMagic from './pages/MixedMagic';
 import MagicBuilder from './components/MagicBuilder';
 
+import Search from './components/Search';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import NavMeniu from './components/NavMeniu';
+
 const App = () => {
   return (
     <Router>
@@ -19,9 +24,14 @@ const App = () => {
         <Route path="/magic/:id" component={SingleMagic} />
         <Route path="/pure-magic" component={PureMagic} />
         <Route path="/mixed-magic" component={MixedMagic} />
+        <Route path="/search" component={Search} />
+        <Route path="/footer" component={Footer} />
+        <Route path="/header" component={Header} />
+        <Route path="/nav-meniu" component={NavMeniu} />
       </Switch>
     </Router>
   );
 };
 
 export default App;
+
