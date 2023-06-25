@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AllElements from './pages/AllElements';
 import SingleElement from './pages/SingleElement';
 import AllMagic from './pages/AllMagic';
@@ -11,13 +11,15 @@ import MagicBuilder from './pages/MagicBuilder';
 const App = () => {
   return (
     <Router>
-      <Route exact path="/" component={AllElements} />
-      <Route path="/element/:id" component={SingleElement} />
-      <Route exact path="/magic-builder" component={MagicBuilder} />
-      <Route exact path="/magic" component={AllMagic} />
-      <Route path="/magic/:id" component={SingleMagic} />
-      <Route path="/pure-magic" component={PureMagic} />
-      <Route path="/mixed-magic" component={MixedMagic} />
+      <Routes>
+        <Route exact path="/" element={<AllElements />} />
+        <Route path="/element/:id" element={<SingleElement />} />
+        <Route exact path="/magic-builder" element={<MagicBuilder />} />
+        <Route exact path="/magic" element={<AllMagic />} />
+        <Route path="/magic/:id" element={<SingleMagic />} />
+        <Route path="/pure-magic" element={<PureMagic />} />
+        <Route path="/mixed-magic" element={<MixedMagic />} />
+      </Routes>
     </Router>
   );
 };
