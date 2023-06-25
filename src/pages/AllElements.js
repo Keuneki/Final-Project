@@ -1,6 +1,7 @@
 import React from 'react';
-import MagicElement from '../components/MagicElement';
+import MagicElement from '../components/Element';
 import elementsData from '../API/elements.json';
+
 
 
 const AllElements = () => {
