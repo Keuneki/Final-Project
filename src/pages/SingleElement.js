@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import elementsData from '../API/elements.json';
+import Images from './src/images/index.js';
+import './src/css/Main.css';
 
 const SingleElement = () => {
   const { id } = useParams();
@@ -25,7 +27,7 @@ const SingleElement = () => {
         );
         return (
           <div key={strongElement.id}>
-            <img src={strongElement.image} alt={strongElement.name} />
+            <img src={Images[strongElement.image]} alt={strongElement.name} />
           </div>
         );
       })}
@@ -36,7 +38,7 @@ const SingleElement = () => {
         );
         return (
           <div key={weakElement.id}>
-            <img src={weakElement.image} alt={weakElement.name} />
+            <img src={Images[weakElement.image]} alt={weakElement.name} />
           </div>
         );
       })}
@@ -47,7 +49,7 @@ const SingleElement = () => {
         );
         return (
           <div key={boostElement.id}>
-            <img src={boostElement.image} alt={boostElement.name} />
+            <img src={Images[boostElement.image]} alt={boostElement.name} />
           </div>
         );
       })}

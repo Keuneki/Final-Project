@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from './Search';
-import './CSS/Hero.css';
+import '../src/CSS/Hero.css';
 
 function Hero() {
   return (
@@ -11,7 +11,7 @@ function Hero() {
       <div className="hero__right">
         <img
           className="hero__image"
-          src="path/to/your/image.png"
+          src="images/hero-image.png"
           alt="Hero Image"
         />
       </div>

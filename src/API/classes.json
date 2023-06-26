@@ -3,7 +3,7 @@
       {
         "id": 1,
         "name": "Warrior",
-        "image": "src/images/classes/warrior.png",
+        "image": "warrior",
         "type": "basic",
         "description": "Warriors are swordsmen who prefer melee combat and rely on their strength in combat",
         "weapon": "sword",
@@ -14,7 +14,7 @@
       {
         "id": 2,
         "name": "Monk",
-        "image": "src/images/classes/monk.png",
+        "image": "monk",
         "type": "basic",
         "description": "Monks are disciplined fighters who specialize in martial arts and inner harmony",
         "weapon": "unarmed",
@@ -25,7 +25,7 @@
       {
         "id": 3,
         "name": "Mystic",
-        "image": "src/images/classes/mystic.png",
+        "image": "mystic",
         "type": "basic",
         "description": "Mystics are spellcasters who harness the power of arcane energies for offensive and defensive purposes",
         "weapon": "staff",
@@ -36,7 +36,7 @@
       {
         "id": 4,
         "name": "Rogue",
-        "image": "src/images/classes/rogue.png",
+        "image": "rogue",
         "type": "basic",
         "description": "Rogues are agile and stealthy fighters who excel in deception, evasion, and quick strikes",
         "weapon": "dagger",
@@ -47,7 +47,7 @@
       {
         "id": 5,
         "name": "Ranger",
-        "image": "src/images/classes/ranger.png",
+        "image": "ranger",
         "type": "advanced",
         "description": "Rangers are skilled archers and trackers who specialize in long-range combat and wilderness survival",
         "weapon": "bow",
@@ -58,7 +58,7 @@
       {
         "id": 6,
         "name": "Brutalist",
-        "image": "src/images/classes/brutalist.png",
+        "image": "brutalist",
         "type": "advanced",
         "description": "Brutalists are brute force fighters who rely on their sheer strength and heavy weaponry to overpower their enemies",
         "weapon": "hammer",
@@ -69,7 +69,7 @@
       {
         "id": 7,
         "name": "Guardian",
-        "image": "src/images/classes/guardian.png",
+        "image": "guardian",
         "type": "advanced",
         "description": "Guardians are resilient defenders who excel at protecting their allies and mitigating damage",
         "weapon": "shield",
@@ -80,7 +80,7 @@
       {
         "id": 8,
         "name": "Adventurer",
-        "image": "src/images/classes/adventurer.png",
+        "image": "adventurer",
         "type": "advanced",
         "description": "Adventurers are versatile fighters who adapt to various situations and excel in exploration and resourcefulness",
         "weapon": "varies",
@@ -91,7 +91,7 @@
       {
         "id": 9,
         "name": "Spiritualist",
-        "image": "src/images/classes/spiritualist.png",
+        "image": "spiritualist",
         "type": "advanced",
         "description": "Spiritualists commune with spirits and tap into the ethereal realm to wield otherworldly powers",
         "weapon": "wand",
@@ -102,7 +102,7 @@
       {
         "id": 10,
         "name": "Elementalist",
-        "image": "src/images/classes/elementalist.png",
+        "image": "elementalist",
         "type": "advanced",
         "description": "Elementalists harness the forces of nature and manipulate the elements to unleash devastating attacks",
         "weapon": "staff",
@@ -113,7 +113,7 @@
       {
         "id": 11,
         "name": "Mage",
-        "image": "src/images/classes/mage.png",
+        "image": "mage",
         "type": "advanced",
         "description": "Mages are arcane spellcasters who specialize in casting powerful offensive and defensive spells",
         "weapon": "wand",
@@ -124,7 +124,7 @@
       {
         "id": 12,
         "name": "Duelist",
-        "image": "src/images/classes/duelist.png",
+        "image": "duelist",
         "type": "advanced",
         "description": "Duelists are masters of one-on-one combat, specializing in precise strikes, quick movements, and acrobatics",
         "weapon": "rapier",
@@ -135,7 +135,7 @@
       {
         "id": 13,
         "name": "Knight",
-        "image": "src/images/classes/knight.png",
+        "image": "knight",
         "type": "master",
         "description": "Knights are honorable warriors who follow a strict code of chivalry and protect the weak and defenseless",
         "weapon": "sword",
@@ -146,7 +146,7 @@
       {
         "id": 14,
         "name": "Gladiator",
-        "image": "src/images/classes/gladiator.png",
+        "image": "gladiator",
         "type": "master",
         "description": "Gladiators are formidable fighters who have honed their skills in the arena, specializing in brutal melee combat",
         "weapon": "varies",
@@ -157,7 +157,7 @@
       {
         "id": 15,
         "name": "Berserker",
-        "image": "src/images/classes/berserker.png",
+        "image": "berserker",
         "type": "master",
         "description": "Berserkers are relentless warriors who enter a state of uncontrollable fury in battle, dealing massive damage",
         "weapon": "axe",
@@ -168,7 +168,7 @@
       {
         "id": 16,
         "name": "Avenger",
-        "image": "src/images/classes/avenger.png",
+        "image": "avenger",
         "type": "master",
         "description": "Avengers are vengeful fighters who channel their hatred and seek justice against those who wronged them",
         "weapon": "varies",
@@ -179,7 +179,7 @@
       {
         "id": 17,
         "name": "Arcanist",
-        "image": "src/images/classes/arcanist.png",
+        "image": "arcanist",
         "type": "master",
         "description": "Arcanists are masters of arcane magic, wielding immense power and unraveling the mysteries of the universe",
         "weapon": "staff",
@@ -190,7 +190,7 @@
       {
         "id": 18,
         "name": "Summoner",
-        "image": "src/images/classes/summoner.png",
+        "image": "summoner",
         "type": "master",
         "description": "Summoners command the forces of creatures and spirits, calling upon their aid in battle and magic",
         "weapon": "wand",
@@ -201,7 +201,7 @@
       {
         "id": 19,
         "name": "Tempest",
-        "image": "src/images/classes/tempest.png",
+        "image": "tempest",
         "type": "master",
         "description": "Tempests are masters of elemental forces, wielding storms and unleashing devastating natural disasters",
         "weapon": "wand",
@@ -212,7 +212,7 @@
       {
         "id": 20,
         "name": "Enigma",
-        "image": "src/images/classes/enigma.png",
+        "image": "enigma",
         "type": "master",
         "description": "Enigmas are enigmatic spellcasters who manipulate time and space, distorting reality to their will",
         "weapon": "varies",
@@ -223,7 +223,7 @@
       {
         "id": 21,
         "name": "Dreadnought",
-        "image": "src/images/classes/dreadnought.png",
+        "image": "dreadnought",
         "type": "master",
         "description": "Dreadnoughts are unstoppable forces of destruction, wielding massive weapons and shrugging off damage",
         "weapon": "varies",
@@ -234,7 +234,7 @@
       {
         "id": 22,
         "name": "Paladin",
-        "image": "src/images/classes/paladin.png",
+        "image": "paladin",
         "type": "master",
         "description": "Paladins are holy warriors who combine martial prowess with divine magic, smiting evil and healing the wounded",
         "weapon": "varies",
@@ -245,7 +245,7 @@
       {
         "id": 23,
         "name": "Druid",
-        "image": "src/images/classes/druid.png",
+        "image": "druid",
         "type": "master",
         "description": "Druids are nature's guardians, connected to the spirits of the wild and wielding the power of nature itself",
         "weapon": "staff",
@@ -256,7 +256,7 @@
       {
         "id": 24,
         "name": "Purifier",
-        "image": "src/images/classes/purifier.png",
+        "image": "purifier",
         "type": "master",
         "description": "Purifiers are holy healers who cleanse and restore life, providing vital support to their allies in battle",
         "weapon": "wand",
@@ -267,7 +267,7 @@
       {
         "id": 25,
         "name": "Oracle",
-        "image": "src/images/classes/oracle.png",
+        "image": "oracle",
         "type": "master",
         "description": "Oracles possess foresight and divine insight, predicting and manipulating future events with their powers",
         "weapon": "varies",
@@ -278,7 +278,7 @@
       {
         "id": 26,
         "name": "Juggernaut",
-        "image": "src/images/classes/juggernaut.png",
+        "image": "juggernaut",
         "type": "master",
         "description": "Juggernauts are unstoppable forces of destruction, wielding massive weapons and shrugging off damage",
         "weapon": "varies",
@@ -289,7 +289,7 @@
       {
         "id": 27,
         "name": "Warden",
-        "image": "src/images/classes/warden.png",
+        "image": "warden",
         "type": "master",
         "description": "Wardens are nature's protectors, skilled in both offensive and defensive nature-based magic and combat",
         "weapon": "staff",
@@ -300,7 +300,7 @@
       {
         "id": 28,
         "name": "Ronin",
-        "image": "src/images/classes/ronin.png",
+        "image": "ronin",
         "type": "master",
         "description": "Ronins are masterless samurai who wander the land, using their unmatched swordsmanship and agility to defeat their enemies",
         "weapon": "katana",
@@ -311,7 +311,7 @@
       {
         "id": 29,
         "name": "Ninja",
-        "image": "src/images/classes/ninja.png",
+        "image": "ninja",
         "type": "master",
         "description": "Ninjas are stealthy assassins who specialize in covert operations, using agility and precision to eliminate their targets",
         "weapon": "varies",
@@ -322,7 +322,7 @@
       {
         "id": 30,
         "name": "Ethereal",
-        "image": "src/images/classes/ethereal.png",
+        "image": "ethereal",
         "type": "master",
         "description": "Ethereals are mystical beings who can shift between dimensions, wielding powerful ethereal magic and manipulating reality",
         "weapon": "wand",
@@ -333,7 +333,7 @@
       {
         "id": 31,
         "name": "Assassin",
-        "image": "src/images/classes/assassin.png",
+        "image": "assassin",
         "type": "master",
         "description": "Assassins are elite killers who strike swiftly and silently, eliminating their targets with deadly precision",
         "weapon": "dagger",
@@ -344,7 +344,7 @@
       {
         "id": 32,
         "name": "Enchanter",
-        "image": "src/images/classes/enchanter.png",
+        "image": "enchanter",
         "type": "master",
         "description": "Enchanters are masters of enchantments and illusions, manipulating reality and deceiving their foes",
         "weapon": "wand",
@@ -355,7 +355,7 @@
       {
         "id": 33,
         "name": "Marksman",
-        "image": "src/images/classes/marksman.png",
+        "image": "marksman",
         "type": "master",
         "description": "Marksmen are expert archers and sharpshooters, picking off enemies from a distance with deadly accuracy",
         "weapon": "bow",
@@ -366,7 +366,7 @@
       {
         "id": 34,
         "name": "Cleric",
-        "image": "src/images/classes/cleric.png",
+        "image": "cleric",
         "type": "master",
         "description": "Clerics are devoted healers and holy warriors, wielding divine magic to mend wounds and vanquish evil",
         "weapon": "staff",
@@ -377,7 +377,7 @@
       {
         "id": 35,
         "name": "Warlock",
-        "image": "src/images/classes/warlock.png",
+        "image": "warlock",
         "type": "master",
         "description": "Warlocks are dark spellcasters who harness forbidden and chaotic magic to wield immense power",
         "weapon": "wand",
@@ -388,7 +388,7 @@
       {
         "id": 36,
         "name": "Reanimator",
-        "image": "src/images/classes/reanimator.png",
+        "image": "reanimator",
         "type": "master",
         "description": "Reanimators are necromancers who have mastered the dark arts of raising and controlling the undead",
         "weapon": "staff",
@@ -399,7 +399,7 @@
       {
         "id": 37,
         "name": "Illusionist",
-        "image": "src/images/classes/illusionist.png",
+        "image": "illusionist",
         "type": "master",
         "description": "Illusionists are masters of illusions and deception, manipulating perception and confusing their enemies",
         "weapon": "wand",
@@ -410,7 +410,7 @@
       {
         "id": 38,
         "name": "Sentinel",
-        "image": "src/images/classes/sentinel.png",
+        "image": "sentinel",
         "type": "master",
         "description": "Sentinels are steadfast defenders who protect their allies with unwavering resolve and impenetrable armor",
         "weapon": "varies",
@@ -421,7 +421,7 @@
       {
         "id": 39,
         "name": "Sorcerer",
-        "image": "src/images/classes/sorcerer.png",
+        "image": "sorcerer",
         "type": "master",
         "description": "Sorcerers are masters of arcane magic, wielding raw power and bending reality to their will",
         "weapon": "wand",
@@ -432,7 +432,7 @@
       {
         "id": 40,
         "name": "Wizard",
-        "image": "src/images/classes/wizard.png",
+        "image": "wizard",
         "type": "master",
         "description": "Wizards are scholars of magic, specializing in the study and application of arcane knowledge",
         "weapon": "wand",
@@ -443,7 +443,7 @@
       {
         "id": 41,
         "name": "Abolisher",
-        "image": "src/images/classes/abolisher.png",
+        "image": "abolisher",
         "type": "master",
         "description": "Abolishers are warriors who possess unmatched strength and skill, cleaving through their enemies with brutal efficiency",
         "weapon": "varies",
@@ -454,7 +454,7 @@
       {
         "id": 42,
         "name": "Reaper",
-        "image": "src/images/classes/reaper.png",
+        "image": "reaper",
         "type": "master",
         "description": "Reapers are dark and sinister warriors who harness the power of death and decay to strike fear into their enemies",
         "weapon": "scythe",

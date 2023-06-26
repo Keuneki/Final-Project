@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import magicData from '../API/magic.json';
+import './src/css/Main.css';
+import Images from './src/images/index.js';
 
 const AllMagic = () => {
   const pureMagic = magicData.magic.filter(magic => magic.type === 'pure');
@@ -14,7 +16,7 @@ const AllMagic = () => {
           {pureMagic.map(magic => (
             <Link to={`/magic/${magic.id}`} key={magic.id} className="magic-link">
               <div className="magic-item">
-                <img src={magic.image} alt={magic.name} />
+                <img src={Images[magic.image]} alt={magic.name} />
                 <h3>{magic.name}</h3>
                 <p>{magic.description}</p>
               </div>
@@ -31,7 +33,7 @@ const AllMagic = () => {
           {mixedMagic.map(magic => (
             <Link to={`/magic/${magic.id}`} key={magic.id} className="magic-link">
               <div className="magic-item">
-                <img src={magic.image} alt={magic.name} />
+              <img src={Images[magic.image]} alt={magic.name} />
                 <h3>{magic.name}</h3>
                 <p>{magic.description}</p>
               </div>

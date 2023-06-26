@@ -1,0 +1,24 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import classesData from './classes.json';
+import Images from './src/images/index.js';
+
+const MasterClass = () => {
+  const masterClasses = classesData.filter((cls) => cls.type === 'master');
+
+  return (
+    <div>
+      <h1>Master Classes</h1>
+      {masterClasses.map((cls) => (
+        <Link to={`/class/${cls.id}`} key={cls.id}>
+          <div>
+            <img src={cls.image} alt={cls.name} />
+            <p>{cls.name}</p>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+export default MasterClass;

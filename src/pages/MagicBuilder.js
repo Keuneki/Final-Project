@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import './src/css/Main.css';
+import Images from './src/images/index.js';
 
 const MagicBuilder = () => {
   const [elements, setElements] = useState([]);
@@ -47,7 +49,7 @@ const MagicBuilder = () => {
             <option key={element.name} value={element.name}>{element.name}</option>
           ))}
         </select>
-        <img src={element1Image} width="55" height="55" alt="" />
+        <img src={Images[element1Image]} width="55" height="55" alt="" />
       </div>
 
       <div>
@@ -58,7 +60,7 @@ const MagicBuilder = () => {
             <option key={element.name} value={element.name}>{element.name}</option>
           ))}
         </select>
-        <img src={element2Image} width="55" height="55" alt="" />
+        <img src={Images[element2Image]} width="55" height="55" alt="" />
       </div>
 
       <button onClick={handleLearnMagic}>Learn Magic</button>

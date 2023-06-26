@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import '../src/css/Main.css';
+import Images from './src/images/index.js';
 
 const Review = () => {
   const [reviews, setReviews] = useState([]);

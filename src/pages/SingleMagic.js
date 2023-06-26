@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import magicData from '../API/magic.json';
+import Images from './src/images/index.js';
+import '../src/css/Main.css';
 
 const SingleMagic = () => {
   const { id } = useParams();
@@ -12,7 +14,7 @@ const SingleMagic = () => {
 
   return (
     <div>
-      <img src={magic.image} alt={magic.name} />
+      <img src={Images[magic.image]} alt={magic.name} />
       <h2>{magic.name}</h2>
       <p>{magic.description}</p>
       <p>Type: {magic.type}</p>
