@@ -1,6 +1,6 @@
 import React from 'react';
 import classesData from '../src/API/classes.json';
-import Images from '../src/images/index.js';
+import Images from '../images/index.js';
 import Header from '../components/Header';
 
 const SingleClass = ({ match }) => {

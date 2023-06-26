@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import elementsData from '../API/elements.json';
-import Images from './src/images/index.js';
+import elementsData from '../src/API/elements.json';
+import Images from '../images/index.js';
 import '../src/css/Main.css';
 import Header from '../components/Header';
 

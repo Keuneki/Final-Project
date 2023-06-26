@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "../src/css/Main.css";
-import Images from "./src/images/index.js";
-import Header from "../components/Header";
-import reviewsData from "../path/to/reviews.json";
+import "../css/Main.css";
+import Images from "../images/index.js";
+import Header from "../components/Header.js";
+import reviewsData from "../API/reviews.json";
 
 const Review = () => {
   const [reviews, setReviews] = useState([]);
@@ -142,7 +142,7 @@ const Review = () => {
       <ul>
         {displayedReviews.map((review) => (
           <li key={review.id}>
-            <img src={Images[profile.image]} alt="Profile Pic" />
+            <img src={Images[review.image]} alt="Profile Pic" />
             <p>{review.name}</p>
             <p>{review.country}</p>
             <p>{review.description}</p>

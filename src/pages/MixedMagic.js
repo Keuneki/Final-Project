@@ -1,6 +1,6 @@
 import React from 'react';
-import magicData from '../API/magic.json';
-import Images from './src/images/index.js';
+import magicData from '../src/API/magic.json';
+import Images from '../images/index.js';
 import '../src/css/Main.css';
 import Header from '../components/Header';
 

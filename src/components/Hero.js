@@ -1,6 +1,7 @@
 import React from 'react';
-import Search from './Search';
-import '../src/CSS/Hero.css';
+import Search from '../components/Search';
+import '../CSS/Hero.css';
+import heroImage from '../images/hero-image.png';
 
 function Hero() {
   return (
@@ -11,7 +12,7 @@ function Hero() {
       <div className="hero__right">
         <img
           className="hero__image"
-          src="images/hero-image.png"
+          src={heroImage}
           alt="Hero Image"
         />
       </div>
@@ -20,3 +21,4 @@ function Hero() {
 }
 
 export default Hero;
+

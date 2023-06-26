@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import classesData from './classes.json';
-import Images from './src/images/index.js';
+import classesData from '../API/classes.json';
+import Images from '../images/index.js';
 import Header from '../components/Header';
 
 const AlClasses = () => {

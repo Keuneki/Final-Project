@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './src/css/Main.css';
-import Images from './src/images/index.js';
+import '../css/Main.css';
+import Images from '../images/index.js';
 import Header from '../components/Header';
 
 const MagicBuilder = () => {

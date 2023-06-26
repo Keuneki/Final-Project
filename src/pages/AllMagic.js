@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import magicData from '../API/magic.json';
-import './src/css/Main.css';
-import Images from './src/images/index.js';
+import '../css/Main.css';
+import Images from '../images/index.js';
 
 const AllMagic = () => {
   const pureMagic = magicData.magic.filter(magic => magic.type === 'pure');
