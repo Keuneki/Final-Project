@@ -12,7 +12,7 @@ const BasicClass = () => {
       {basicClasses.map((cls) => (
         <Link to={`/class/${cls.id}`} key={cls.id}>
           <div>
-            <img src={cls.image} alt={cls.name} />
+            <img src={Images[cls.image]} alt={cls.name} />
             <p>{cls.name}</p>
           </div>
         </Link>

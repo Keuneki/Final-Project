@@ -2,6 +2,8 @@ import React from 'react';
 import magicData from '../API/magic.json';
 import Images from './src/images/index.js';
 import '../src/css/Main.css';
+import Header from '../components/Header';
+
 
 
 
@@ -10,6 +12,7 @@ const MixedMagic = () => {
 
   return (
     <div className="container">
+      <Header />
       <h2>Mixed Magic</h2>
       {mixedMagic.map(magic => (
         <div key={magic.id} className="magic-item">

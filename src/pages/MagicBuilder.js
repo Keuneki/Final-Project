@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './src/css/Main.css';
 import Images from './src/images/index.js';
+import Header from '../components/Header';
 
 const MagicBuilder = () => {
   const [elements, setElements] = useState([]);
@@ -39,6 +40,7 @@ const MagicBuilder = () => {
 
   return (
     <div>
+      <Header />
       <h1>Magic Builder</h1>
 
       <div>

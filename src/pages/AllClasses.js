@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import classesData from './classes.json';
 import Images from './src/images/index.js';
+import Header from '../components/Header';
 
 const AlClasses = () => {
   const classesByType = {
@@ -15,13 +16,15 @@ const AlClasses = () => {
   });
 
   return (
+    
     <div>
+    <Header />
       <h1>All Classes</h1>
       <h2>Basic</h2>
       {classesByType.basic.map((cls) => (
         <Link to={`/class/${cls.id}`} key={cls.id}>
           <div>
-            <img src={cls.image} alt={cls.name} />
+            <img src={Images[cls.image]} alt={cls.name} />
             <p>{cls.name}</p>
           </div>
         </Link>
@@ -31,7 +34,7 @@ const AlClasses = () => {
       {classesByType.advanced.map((cls) => (
         <Link to={`/class/${cls.id}`} key={cls.id}>
           <div>
-            <img src={cls.image} alt={cls.name} />
+            <img src={Images[cls.image]} alt={cls.name} />
             <p>{cls.name}</p>
           </div>
         </Link>
@@ -41,7 +44,7 @@ const AlClasses = () => {
       {classesByType.master.map((cls) => (
         <Link to={`/class/${cls.id}`} key={cls.id}>
           <div>
-            <img src={cls.image} alt={cls.name} />
+            <img src={Images[cls.image]} alt={cls.name} />
             <p>{cls.name}</p>
           </div>
         </Link>

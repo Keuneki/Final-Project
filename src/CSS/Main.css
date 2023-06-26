@@ -1,421 +1,213 @@
 /* AllElements.css */
 
-.AllElements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .AllElements h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .AllElements a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-  }
-  
-  .AllElements a:hover {
-    transform: scale(1.1);
-  }
-  
-  .AllElements img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* AllMagic.css */
-  
-  .AllMagic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .AllMagic h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .AllMagic .magic-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-  }
-  
-  .AllMagic .magic-link:hover {
-    transform: scale(1.1);
-  }
-  
-  .AllMagic .magic-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .AllMagic .magic-item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .AllMagic .magic-item h3 {
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* CoreElements.css */
-  
-  .CoreElements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .CoreElements h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .CoreElements a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-  }
-  
-  .CoreElements a:hover {
-    transform: scale(1.1);
-  }
-  
-  .CoreElements img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* MagicBuilder.css */
-  
-  .MagicBuilder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .MagicBuilder h1 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .MagicBuilder label {
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .MagicBuilder select {
-    padding: 8px;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .MagicBuilder img {
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-  }
-  
-  .MagicBuilder button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .MagicBuilder button:hover {
-    background-color: #555;
-  }
-  
-  .MagicBuilder h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    margin: 20px 0;
-  }
-  
-  .MagicBuilder p {
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  /* MixedMagic.css */
-  
-  .MixedMagic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .MixedMagic h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .MixedMagic .magic-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .MixedMagic .magic-item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .MixedMagic .magic-item h3 {
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* PrimeElements.css */
-  
-  .PrimeElements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .PrimeElements h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .PrimeElements a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-  }
-  
-  .PrimeElements a:hover {
-    transform: scale(1.1);
-  }
-  
-  .PrimeElements img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .PrimeElements p {
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* PureMagic.css */
-  
-  .PureMagic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .PureMagic h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .PureMagic .magic-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .PureMagic .magic-item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .PureMagic .magic-item h3 {
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .PureMagic .magic-item p {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  
-  /* Reviews.css */
-  
-  .Reviews {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .Reviews h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .Reviews form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .Reviews textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  .Reviews button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .Reviews button:hover {
-    background-color: #555;
-  }
-  
-  .Reviews ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .Reviews li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .Reviews p {
-    color: #fff;
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  
-  .Reviews button {
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .Reviews button:hover {
-    background-color: #555;
-  }
-  
-  /* SingleElement.css */
-  
-  .SingleElement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+.AllElements,
+.AllMagic,
+.CoreElements,
+.MagicBuilder,
+.MixedMagic,
+.PrimeElements,
+.PureMagic,
+.Reviews,
+.SingleElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AllElements h2,
+.AllMagic h2,
+.CoreElements h2,
+.MagicBuilder h1,
+.MagicBuilder h2,
+.MixedMagic h2,
+.PrimeElements h2,
+.PureMagic h2,
+.Reviews h2,
+.SingleElement h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.AllElements a,
+.AllMagic .magic-link,
+.CoreElements a,
+.PrimeElements a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.AllElements a:hover,
+.AllMagic .magic-link:hover,
+.CoreElements a:hover,
+.PrimeElements a:hover {
+  transform: scale(1.1);
+}
+
+.AllElements img,
+.AllMagic .magic-item img,
+.CoreElements img,
+.MagicBuilder img,
+.MixedMagic .magic-item img,
+.PrimeElements img,
+.PureMagic .magic-item img,
+.SingleElement img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.AllMagic,
+.MixedMagic .magic-item,
+.PrimeElements,
+.PureMagic .magic-item {
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.MixedMagic .magic-item h3,
+.PrimeElements p,
+.PureMagic .magic-item h3,
+.PureMagic .magic-item p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.MagicBuilder {
+  margin-bottom: 20px;
+}
+
+.MagicBuilder label {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.MagicBuilder select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.MagicBuilder button,
+.Reviews button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.MagicBuilder button:hover,
+.Reviews button:hover {
+  background-color: #555;
+}
+
+.MagicBuilder p,
+.MagicBuilder select,
+.Reviews p,
+.Reviews textarea {
+  color: #fff;
+  font-size: 16px;
+}
+
+.Reviews form,
+.Reviews ul {
+  margin-bottom: 20px;
+}
+
+.Reviews textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.Reviews ul {
+  list-style: none;
+  padding: 0;
+}
+.Reviews li,
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Reviews li img,
+li img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Reviews li p,
+li p {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Additional styles for responsiveness */
+
+@media (max-width: 768px) {
+  .AllElements img,
+  .AllMagic .magic-item img,
+  .CoreElements img,
+  .MagicBuilder img,
+  .MixedMagic .magic-item img,
+  .PrimeElements img,
+  .PureMagic .magic-item img,
   .SingleElement img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    height: 150px;
   }
-  
+
+  .AllElements h2,
+  .AllMagic h2,
+  .CoreElements h2,
+  .MagicBuilder h1,
+  .MagicBuilder h2,
+  .MixedMagic h2,
+  .PrimeElements h2,
+  .PureMagic h2,
+  .Reviews h2,
   .SingleElement h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
   }
-  
-  .SingleElement p {
-    color: #fff;
+
+  .MagicBuilder label {
     font-size: 16px;
-    text-align: center;
-    margin-bottom: 20px;
   }
-  
+
+  .MagicBuilder select {
+    font-size: 14px;
+  }
+
+  .MagicBuilder button,
+  .Reviews button {
+    font-size: 16px;
+  }
+
+  .MagicBuilder p,
+  .MagicBuilder select,
+  .Reviews p,
+  .Reviews textarea {
+    font-size: 14px;
+  }
+}

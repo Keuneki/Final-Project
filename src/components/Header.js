@@ -1,5 +1,4 @@
 import React from 'react';
-import Search from './Search';
 import NavMenu from './NavMenu';
 import '.src/CSS/Header.css';
 
@@ -8,7 +7,6 @@ const Header = () => {
     <header className="header-container">
       <div className="logo">Logo</div>
       <NavMenu />
-      <Search />
     </header>
   );
 };

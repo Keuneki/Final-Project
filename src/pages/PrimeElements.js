@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import elementsData from '../API/elements.json';
 import Images from './src/images/index.js';
 import '../src/css/Main.css';
+import Header from '../components/Header';
 
 const PrimeElements = () => {
 
@@ -11,7 +12,8 @@ const PrimeElements = () => {
   );
 
   return (
-    <div>
+    <div>  
+    <Header />
       <h2>Prime Elements</h2>
       {primeElements.map((element) => (
         <Link key={element.id} to={`/element/${element.id}`}>

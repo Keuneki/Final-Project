@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import elementsData from '../API/elements.json';
 import Images from './src/images/index.js';
 import './src/css/Main.css';
+import Header from '../components/Header';
 
 const CoreElements = () => {
  
@@ -12,6 +13,7 @@ const CoreElements = () => {
 
   return (
     <div>
+      <Header />
       <h2>Core Elements</h2>
       {coreElements.map((element) => (
         <Link key={element.id} to={`/element/${element.id}`}>

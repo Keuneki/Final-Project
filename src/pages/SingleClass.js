@@ -1,6 +1,7 @@
 import React from 'react';
 import classesData from '../src/API/classes.json';
-import Images from './src/images/index.js';
+import Images from '../src/images/index.js';
+import Header from '../components/Header';
 
 const SingleClass = ({ match }) => {
   const classId = match.params.id;
@@ -23,7 +24,8 @@ const SingleClass = ({ match }) => {
 
   return (
     <div>
-      <img src={image} alt={name} />
+      <Header />
+      <img src={Images[image]} alt={name} />
       <h1>{name}</h1>
       <p>{description}</p>
       <p>Type: {type}</p>

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import elementsData from '../API/elements.json';
 import Images from './src/images/index.js';
 import './src/css/Main.css';
+import Header from '../components/Header';
 
 const SingleElement = () => {
   const { id } = useParams();
@@ -17,6 +18,7 @@ const SingleElement = () => {
 
   return (
     <div>
+      <Header />
       <img src={element.image} alt={element.name} />
       <h2>{element.name}</h2>
       <p>{element.description}</p>
