@@ -2,8 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import elementsData from '../API/elements.json';
 import Images from '../images/index.js';
-import '../css/Main.css';
+import '../CSS/Main.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const SingleElement = () => {
   const { id } = useParams();
@@ -55,6 +56,7 @@ const SingleElement = () => {
           </div>
         );
       })}
+      <Footer />
     </div>
   );
 };

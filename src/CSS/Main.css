@@ -7,10 +7,16 @@
 .PrimeElements,
 .PureMagic,
 .Reviews,
-.SingleElement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.SingleElement
+.AllClasses,
+.SingleClass,
+.BasicClass,
+.AdvancedClass,
+.MasterClass, {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
 }
 
 .AllElements h2,
@@ -23,11 +29,21 @@
 .PureMagic h2,
 .Reviews h2,
 .SingleElement h2 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: #fff;
   font-size: 24px;
+  font-family: fantasy;
   margin-bottom: 20px;
+  background: linear-gradient(45deg, #ff6b6b, #556270);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 5s ease infinite;
 }
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 .AllElements a,
 .AllMagic .magic-link,
@@ -52,7 +68,6 @@
 .AllElements img,
 .AllMagic .magic-item img,
 .CoreElements img,
-.MagicBuilder img,
 .MixedMagic .magic-item img,
 .PrimeElements img,
 .PureMagic .magic-item img,
@@ -83,20 +98,6 @@
   font-weight: bold;
 }
 
-.MagicBuilder {
-  margin-bottom: 20px;
-}
-
-.MagicBuilder label {
-  color: #fff;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.MagicBuilder select {
-  padding: 8px;
-  font-size: 16px;
-}
 
 .MagicBuilder button,
 .Reviews button {
@@ -110,19 +111,6 @@
   transition: background-color 0.3s ease;
 }
 
-.MagicBuilder button:hover,
-.Reviews button:hover {
-  background-color: #555;
-}
-
-.MagicBuilder p,
-.MagicBuilder select,
-.Reviews p,
-.Reviews textarea {
-  color: #fff;
-  font-size: 16px;
-}
-
 .Reviews form,
 .Reviews ul {
   margin-bottom: 20px;
@@ -131,26 +119,27 @@
 .Reviews textarea {
   width: 100%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .Reviews ul {
   list-style: none;
   padding: 0;
 }
+
 .Reviews li,
 li {
   display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  align-items: flex-start;
+  margin-bottom: 32px;
 }
 
 .Reviews li img,
 li img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 10px;
@@ -158,11 +147,8 @@ li img {
 
 .Reviews li p,
 li p {
-  color: #fff;
   font-size: 16px;
 }
-
-/* Additional styles for responsiveness */
 
 @media (max-width: 768px) {
   .AllElements img,
@@ -180,8 +166,6 @@ li p {
   .AllElements h2,
   .AllMagic h2,
   .CoreElements h2,
-  .MagicBuilder h1,
-  .MagicBuilder h2,
   .MixedMagic h2,
   .PrimeElements h2,
   .PureMagic h2,
@@ -202,11 +186,5 @@ li p {
   .Reviews button {
     font-size: 16px;
   }
-
-  .MagicBuilder p,
-  .MagicBuilder select,
-  .Reviews p,
-  .Reviews textarea {
-    font-size: 14px;
-  }
+  
 }

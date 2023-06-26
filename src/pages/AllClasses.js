@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import classesData from '../API/classes.json';
 import Images from '../images/index.js';
 import Header from '../components/Header';
+import '../CSS/Main.css';
+import Footer from '../components/Footer';
 
 const AlClasses = () => {
   const classesByType = {
@@ -11,7 +13,7 @@ const AlClasses = () => {
     master: []
   };
 
-  classesData.forEach((cls) => {
+  classesData.classes.forEach((cls) => {
     classesByType[cls.type].push(cls);
   });
 
@@ -49,6 +51,7 @@ const AlClasses = () => {
           </div>
         </Link>
       ))}
+      <Footer />
     </div>
   );
 };

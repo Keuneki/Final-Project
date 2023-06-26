@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "../css/Main.css";
 import Images from "../images/index.js";
 import Header from "../components/Header.js";
 import reviewsData from "../API/reviews.json";
+import Footer from "../components/Footer.js";
 
 const Review = () => {
   const [reviews, setReviews] = useState([]);
@@ -38,10 +38,11 @@ const Review = () => {
         country: country,
         description: reviewText,
       };
-      setReviews([...reviews, newReview]);
+      setReviews([newReview, ...reviews]);
       setReviewText("");
       setName("");
       setCountry("");
+
     }
   };
 
@@ -92,11 +93,11 @@ const Review = () => {
   };
 
   useEffect(() => {
-    setDisplayedReviews(reviews.slice(0, reviewsPerPage));
+      setDisplayedReviews(reviews.slice(0, reviewsPerPage));
   }, [reviews, reviewsPerPage]);
 
   useEffect(() => {
-    setReviews(reviewsData);
+    setReviews(reviewsData.reviews);
   }, []);
 
   return (
@@ -153,6 +154,7 @@ const Review = () => {
           </li>
         ))}
       </ul>
+      <Footer />
     </div>
   );
 };

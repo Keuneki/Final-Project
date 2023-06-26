@@ -2,8 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import magicData from '../API/magic.json';
 import Images from '../images/index.js';
-import '../css/Main.css';
+import '../CSS/Main.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const SingleMagic = () => {
   const { id } = useParams();
@@ -20,6 +21,7 @@ const SingleMagic = () => {
       <h2>{magic.name}</h2>
       <p>{magic.description}</p>
       <p>Type: {magic.type}</p>
+      <Footer />
     </div>
   );
 };

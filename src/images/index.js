@@ -1,10 +1,10 @@
 
 // Import magic images
 
-import aeoromancy from './magic/aeoromancy.png';
-import electromancy from './magic/electromancy.png';
-import voidomancy from './magic/voidomancy.png';
-import luxomancy from './magic/luxomancy .png'
+import aeromancy from './magic/aeromancy.png'
+import electromancy from './magic/electromancy.png'
+import voidomancy from './magic/voidomancy.png'
+import luxomancy from './magic/luxomancy.png'
 import pyromancy from './magic/pyromancy.png'
 import aquamancy from './magic/aquamancy.png'
 import geomancy from './magic/geomancy.png'
@@ -14,6 +14,7 @@ import teramancy from './magic/teramancy.png'
 import umbramancy from './magic/umbramancy.png'
 import astralmancy from './magic/astralmancy.png'
 import floramancy from './magic/floramancy.png'
+import cryomancy from './magic/cryomancy.png'
 
 // Import element images
 
@@ -39,7 +40,7 @@ import adventurer from './advanced/adventurer.png'
 import brutalist from './advanced/brutalist.png'
 import duelist from './advanced/duelist.png'
 import elementalist from './advanced/elementalist.png'
-import guardian from './advanced/guardian.png'
+import guardian from './advanced/guardianr.png'
 import mage from './advanced/mage.png'
 import ranger from './advanced/ranger.png'
 import spiritualist from './advanced/spiritualist.png'
@@ -50,7 +51,7 @@ import abolisher from './master/abolisher.png'
 import arcanist from './master/arcanist.png'
 import assasin from './master/assasin.png'
 import avenger from './master/avenger.png'
-import berserkir from './master/berserkir.png'
+import berserker from './master/berserker.png'
 import cleric from './master/cleric.png'
 import dreadnought from './master/dreadnought.png'
 import druid from './master/druid.png'
@@ -76,11 +77,11 @@ import summoner from './master/summoner.png'
 import tempest from './master/tempest.png'
 import warden from './master/warden.png'
 import warlock from './master/warlock.png'
-import wizzard from './master/.wizzard.png'
+import wizzard from './master/wizzard.png'
 import profile from './profile.png'
 
 
 
-const images = { profile, abolisher, arcanist, assasin, avenger, berserkir, cleric, dreadnought, druid, enchanter, enigma, ethereal, gladiator, illusionist, knight, marksman, ninja, oracle, paladin, purifier, reanimator, reaper, reaver, ronin, sentinel, shaman, sorcerer, summoner, tempest, warden, warlock, wizzard, warrior, monk, rogue, mystic, adventurer, brutalist, duelist, elementalist, guardian, mage, ranger, spiritualist, aeoromancy, electromancy, voidomancy, luxomancy, pyromancy, aquamancy, necromancy, geomancy, auramancy, teramancy, umbramancy, astralmancy, floramancy, air, fire, water, earth, light, darkness, nether, aether }
+const images = { profile, abolisher, arcanist, assasin, avenger, berserker, cleric, dreadnought, druid, enchanter, enigma, ethereal, gladiator, illusionist, knight, marksman, ninja, oracle, paladin, purifier, reanimator, reaper, reaver, ronin, sentinel, shaman, sorcerer, summoner, tempest, warden, warlock, wizzard, warrior, monk, rogue, mystic, adventurer, brutalist, duelist, elementalist, guardian, mage, ranger, spiritualist, aeromancy, electromancy, voidomancy, luxomancy, pyromancy, aquamancy, necromancy, geomancy, auramancy, teramancy, cryomancy, umbramancy, astralmancy, floramancy, air, fire, water, earth, light, darkness, nether, aether }
 
 export default images;

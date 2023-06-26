@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import elementsData from '../API/elements.json';
 import Images from '../images/index.js';
-import '../css/Main.css';
+import '../CSS/Main.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const CoreElements = () => {
  
-  const coreElements = elementsData.elements.filter(
+  const coreElements = Array.from(elementsData.elements).filter(
     (element) => element.type === 'core'
   );
 
@@ -21,6 +22,7 @@ const CoreElements = () => {
           <p>{element.name}</p>
         </Link>
       ))}
+ <Footer />
     </div>
   );
 };

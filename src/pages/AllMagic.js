@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import magicData from '../API/magic.json';
-import '../css/Main.css';
+import '../CSS/Main.css';
 import Images from '../images/index.js';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const AllMagic = () => {
   const pureMagic = magicData.magic.filter(magic => magic.type === 'pure');
@@ -10,6 +12,7 @@ const AllMagic = () => {
 
   return (
     <div className="container">
+     <Header />
       <div className="row">
         <div className="col-md-6">
           <h2>Pure Magic</h2>
@@ -46,6 +49,7 @@ const AllMagic = () => {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

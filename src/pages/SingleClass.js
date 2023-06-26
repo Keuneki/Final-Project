@@ -1,11 +1,13 @@
 import React from 'react';
-import classesData from '../src/API/classes.json';
+import classesData from '../API/classes.json';
 import Images from '../images/index.js';
 import Header from '../components/Header';
+import '../CSS/Main.css';
+import Footer from '../components/Footer';
 
 const SingleClass = ({ match }) => {
   const classId = match.params.id;
-  const selectedClass = classesData.find((cls) => cls.id === classId);
+  const selectedClass =  classesData.classes.find((cls) => cls.id === classId);
 
   if (!selectedClass) {
     return <div>Class not found</div>;
@@ -33,6 +35,7 @@ const SingleClass = ({ match }) => {
       <p>Fighting Style: {combatStyle}</p>
       <p>Damage Type: {damageType}</p>
       <p>Role: {role}</p>
+      <Footer />
     </div>
   );
 };

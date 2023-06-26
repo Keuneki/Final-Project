@@ -1,8 +1,9 @@
 import React from 'react';
-import magicData from '../src/API/magic.json';
+import magicData from '../API/magic.json';
 import Images from '../images/index.js';
-import '../src/css/Main.css';
+import '../CSS/Main.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 
@@ -21,6 +22,7 @@ const MixedMagic = () => {
           <p>{magic.description}</p>
         </div>
       ))}
+      <Footer />
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import elementsData from '../src/API/elements.json';
+import elementsData from '../API/elements.json';
 import Images from '../images/index.js';
-import '../src/css/Main.css';
+import '../CSS/Main.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const PrimeElements = () => {
 
@@ -21,6 +22,7 @@ const PrimeElements = () => {
           <p>{element.name}</p>
         </Link>
       ))}
+      <Footer />
     </div>
   );
 };

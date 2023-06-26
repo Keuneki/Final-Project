@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import '../CSS/Search.css';
+import clasess from '../API/classes.json';
+import elements from '../API/elements.json';
+import magic from '../API/magic.json';
+import Images from '../images/index.js';
 
 export default function Search() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -7,17 +11,8 @@ export default function Search() {
   
     const handleSearch = async () => {
       try {
-       
-        const classesResponse = await fetch('/API/classes.json');
-        const elementsResponse = await fetch('/API/elements.json');
-        const magicResponse = await fetch('/API/magic.json');
-  
-        const classesData = await classesResponse.json();
-        const elementsData = await elementsResponse.json();
-        const magicData = await magicResponse.json();
-  
     
-        const filteredData = [...classesData, ...elementsData, ...magicData].filter(item =>
+        const filteredData = [...clasess.classes, ...elements.elements, ...magic.magic].filter(item =>
           item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
           item.type.toLowerCase().includes(searchTerm.toLowerCase())
         );
@@ -45,7 +40,7 @@ export default function Search() {
   
         <ul>
           {searchResults.map(item => (
-            <li key={item.id}>{item.name} - {item.type}</li>
+            <li key={item.id}>{item.name}{item.description} - <img src={Images[item.image]} alt="Responce image"/></li>
           ))}
         </ul>
       </div>

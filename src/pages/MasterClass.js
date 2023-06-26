@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import classesData from '../API/classes.json';
 import Images from '../images/index.js';
 import Header from '../components/Header';
+import '../CSS/Main.css';
+import Footer from '../components/Footer';
 
 const MasterClass = () => {
-  const masterClasses = classesData.filter((cls) => cls.type === 'master');
+  const masterClasses =  classesData.classes.filter((cls) => cls.type === 'master');
 
   return (
     <div>
@@ -19,6 +21,7 @@ const MasterClass = () => {
           </div>
         </Link>
       ))}
+      <Footer />
     </div>
   );
 };

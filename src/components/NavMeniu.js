@@ -40,9 +40,6 @@ const NavMenu = () => {
             <li>
               <Link to="/mixed-magic">Mixed Magic</Link>
             </li>
-            <li>
-              <Link to="/magic-builder">Magic Builder</Link>
-            </li>
           </ul>
         </li>
         <li>
