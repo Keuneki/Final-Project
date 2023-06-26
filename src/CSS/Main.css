@@ -30,7 +30,7 @@ justify-content: space-between;
 .Reviews h2,
 .SingleElement h2 {
   font-size: 24px;
-  font-family: fantasy;
+  font-family: "Helvetica Nue";
   margin-bottom: 20px;
   background: linear-gradient(45deg, #ff6b6b, #556270);
   -webkit-background-clip: text;
@@ -44,7 +44,18 @@ justify-content: space-between;
   100% { background-position: 0% 50%; }
 }
 
+.all-classes-container {
+}
 
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Display two columns in each row */
+  gap: 20px; /* Adjust the gap between class cards as desired */
+}
+
+.class-card {
+
+}
 .AllElements a,
 .AllMagic .magic-link,
 .CoreElements a,

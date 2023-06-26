@@ -14,6 +14,11 @@
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
+.logo img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
 .navigation-meniu {
   width: 80%;
 }
@@ -28,6 +33,11 @@
   .logo {
     margin-bottom: 0;
     width: 20%;
+  }
+
+  .logo img {
+    max-width: 300px;
+    max-height: 200px;
   }
 
   .navigation-meniu {

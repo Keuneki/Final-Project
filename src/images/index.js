@@ -49,7 +49,7 @@ import spiritualist from './advanced/spiritualist.png'
 
 import abolisher from './master/abolisher.png'
 import arcanist from './master/arcanist.png'
-import assasin from './master/assasin.png'
+import eliminator from './master/eliminator.png'
 import avenger from './master/avenger.png'
 import berserker from './master/berserker.png'
 import cleric from './master/cleric.png'
@@ -78,10 +78,11 @@ import tempest from './master/tempest.png'
 import warden from './master/warden.png'
 import warlock from './master/warlock.png'
 import wizzard from './master/wizzard.png'
+import juggernaut from './master/juggernaut.png'
 import profile from './profile.png'
 
 
 
-const images = { profile, abolisher, arcanist, assasin, avenger, berserker, cleric, dreadnought, druid, enchanter, enigma, ethereal, gladiator, illusionist, knight, marksman, ninja, oracle, paladin, purifier, reanimator, reaper, reaver, ronin, sentinel, shaman, sorcerer, summoner, tempest, warden, warlock, wizzard, warrior, monk, rogue, mystic, adventurer, brutalist, duelist, elementalist, guardian, mage, ranger, spiritualist, aeromancy, electromancy, voidomancy, luxomancy, pyromancy, aquamancy, necromancy, geomancy, auramancy, teramancy, cryomancy, umbramancy, astralmancy, floramancy, air, fire, water, earth, light, darkness, nether, aether }
+const images = { profile, abolisher, arcanist, juggernaut, eliminator, avenger, berserker, cleric, dreadnought, druid, enchanter, enigma, ethereal, gladiator, illusionist, knight, marksman, ninja, oracle, paladin, purifier, reanimator, reaper, reaver, ronin, sentinel, shaman, sorcerer, summoner, tempest, warden, warlock, wizzard, warrior, monk, rogue, mystic, adventurer, brutalist, duelist, elementalist, guardian, mage, ranger, spiritualist, aeromancy, electromancy, voidomancy, luxomancy, pyromancy, aquamancy, necromancy, geomancy, auramancy, teramancy, cryomancy, umbramancy, astralmancy, floramancy, air, fire, water, earth, light, darkness, nether, aether }
 
 export default images;

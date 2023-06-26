@@ -11,17 +11,19 @@ const AdvancedClass = () => {
   const advancedClasses = classesData.classes.filter((cls) => cls.type === 'advanced');
 
   return (
-    <div>
-    <Header />
-      <h1>Advanced Classes</h1>
-      {advancedClasses.map((cls) => (
-        <Link to={`/class/${cls.id}`} key={cls.id}>
-          <div>
-            <img src={Images[cls.image]} alt={cls.name} />
-            <p>{cls.name}</p>
-          </div>
-        </Link>
-      ))}
+    <div className="all-classes-container">
+      <Header />
+      <h1 className="class-title">Advanced Classes</h1>
+      <div className="class-grid">
+        {advancedClasses.map((cls) => (
+          <Link to={`/class/${cls.id}`} key={cls.id}>
+            <div className="class-card">
+              <img src={Images[cls.image]} alt={cls.name} />
+              <p>{cls.name}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
       <Footer />
     </div>
   );
