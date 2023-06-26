@@ -13,6 +13,7 @@ import BasicClass from './pages/BasicClass';
 import AdvancedClass from './pages/AdvancedClass';
 import MasterClass from './pages/MasterClass';
 import SingleClass from './pages/SingleClass';
+import Reviews from './pages/Reviews';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="advanced" element={<AdvancedClass />} />
           <Route path="master" element={<MasterClass />} />
         </Route>
+        <Route path="/reviews" element={<Reviews />} /> 
       </Routes>
     </Router>
   );

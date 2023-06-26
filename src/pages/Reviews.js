@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import '../src/css/Main.css';
-import Images from './src/images/index.js';
-import Header from '../components/Header';
-import reviewsData from '../path/to/reviews.json';
+import React, { useState, useEffect } from "react";
+import "../src/css/Main.css";
+import Images from "./src/images/index.js";
+import Header from "../components/Header";
+import reviewsData from "../path/to/reviews.json";
 
 const Review = () => {
   const [reviews, setReviews] = useState([]);
   const [editReviewId, setEditReviewId] = useState(null);
-  const [reviewText, setReviewText] = useState('');
-  const [name, setName] = useState('');
-  const [country, setCountry] = useState('');
+  const [reviewText, setReviewText] = useState("");
+  const [name, setName] = useState("");
+  const [country, setCountry] = useState("");
   const [displayedReviews, setDisplayedReviews] = useState([]);
   const [reviewsPerPage, setReviewsPerPage] = useState(10);
 
@@ -27,7 +27,11 @@ const Review = () => {
 
   const handleReviewSubmit = (e) => {
     e.preventDefault();
-    if (reviewText.trim() !== '' && name.trim() !== '' && country.trim() !== '') {
+    if (
+      reviewText.trim() !== "" &&
+      name.trim() !== "" &&
+      country.trim() !== ""
+    ) {
       const newReview = {
         id: new Date().getTime().toString(),
         name: name,
@@ -35,9 +39,9 @@ const Review = () => {
         description: reviewText,
       };
       setReviews([...reviews, newReview]);
-      setReviewText('');
-      setName('');
-      setCountry('');
+      setReviewText("");
+      setName("");
+      setCountry("");
     }
   };
 
@@ -52,23 +56,34 @@ const Review = () => {
   };
 
   const handleReviewUpdate = () => {
-    if (reviewText.trim() !== '' && name.trim() !== '' && country.trim() !== '') {
+    if (
+      reviewText.trim() !== "" &&
+      name.trim() !== "" &&
+      country.trim() !== ""
+    ) {
       setReviews((prevReviews) =>
         prevReviews.map((review) =>
           review.id === editReviewId
-            ? { ...review, name: name, country: country, description: reviewText }
+            ? {
+                ...review,
+                name: name,
+                country: country,
+                description: reviewText,
+              }
             : review
         )
       );
       setEditReviewId(null);
-      setReviewText('');
-      setName('');
-      setCountry('');
+      setReviewText("");
+      setName("");
+      setCountry("");
     }
   };
 
   const handleReviewDelete = (id) => {
-    setReviews((prevReviews) => prevReviews.filter((review) => review.id !== id));
+    setReviews((prevReviews) =>
+      prevReviews.filter((review) => review.id !== id)
+    );
   };
 
   const handleFilterChange = (e) => {
@@ -110,7 +125,9 @@ const Review = () => {
           rows={4}
           required
         ></textarea>
-        <button type="submit">{editReviewId ? 'Update Review' : 'Submit Review'}</button>
+        <button type="submit">
+          {editReviewId ? "Update Review" : "Submit Review"}
+        </button>
       </form>
       <div>
         <label>Reviews per page:</label>
@@ -125,12 +142,14 @@ const Review = () => {
       <ul>
         {displayedReviews.map((review) => (
           <li key={review.id}>
-            <img src="src/images/profile-pic.png" alt="Profile Pic" />
+            <img src={Images[profile.image]} alt="Profile Pic" />
             <p>{review.name}</p>
             <p>{review.country}</p>
             <p>{review.description}</p>
             <button onClick={() => handleReviewEdit(review.id)}>Edit</button>
-            <button onClick={() => handleReviewDelete(review.id)}>Delete</button>
+            <button onClick={() => handleReviewDelete(review.id)}>
+              Delete
+            </button>
           </li>
         ))}
       </ul>
