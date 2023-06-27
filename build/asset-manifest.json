@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6a2b57c.css",
-    "main.js": "/static/js/main.1ef37943.js",
+    "main.css": "/static/css/main.6800caba.css",
+    "main.js": "/static/js/main.26b66d97.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/sorcerer.png": "/static/media/sorcerer.91e2e00041be68cdbe67.png",
     "static/media/hero-image.png": "/static/media/hero-image.8e2f345f7bca30557126.png",
@@ -59,6 +59,7 @@
     "static/media/electromancy.png": "/static/media/electromancy.372b33d611aa6541b861.png",
     "static/media/aeromancy.png": "/static/media/aeromancy.b355f7b92e048962f0a9.png",
     "static/media/aquamancy.png": "/static/media/aquamancy.ce4ec624f4cd4a0165eb.png",
+    "static/media/logo.png": "/static/media/logo.e1aac97b3f3f5c720f53.png",
     "static/media/umbramancy.png": "/static/media/umbramancy.faa3a49a03ad507619db.png",
     "static/media/aether.png": "/static/media/aether.8abfa2ca32de73eb9d5e.png",
     "static/media/water.png": "/static/media/water.ba266057a6dea47ec729.png",
@@ -71,14 +72,13 @@
     "static/media/fire.png": "/static/media/fire.e077b13980d28fa9a259.png",
     "static/media/teramancy.png": "/static/media/teramancy.3005dab7837ecb89f9c0.png",
     "static/media/profile.png": "/static/media/profile.3f9701dbf2382c975b44.png",
-    "static/media/logo.png": "/static/media/logo.55f2a2b11d7b74e9b072.png",
     "index.html": "/index.html",
-    "main.e6a2b57c.css.map": "/static/css/main.e6a2b57c.css.map",
-    "main.1ef37943.js.map": "/static/js/main.1ef37943.js.map",
+    "main.6800caba.css.map": "/static/css/main.6800caba.css.map",
+    "main.26b66d97.js.map": "/static/js/main.26b66d97.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6a2b57c.css",
-    "static/js/main.1ef37943.js"
+    "static/css/main.6800caba.css",
+    "static/js/main.26b66d97.js"
   ]
 }

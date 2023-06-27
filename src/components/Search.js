@@ -4,7 +4,7 @@ import elements from '../API/elements.json';
 import magic from '../API/magic.json';
 import Images from '../images/index';
 import '../CSS/Search.css';
-import '../CSS/Main.css'; // Add the import for Main.css
+import '../CSS/Main.css'; 
 
 export default function Search() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -28,7 +28,7 @@ export default function Search() {
   };
 
   return (
-    <div className="all-classes-container"> {/* Add the desired class name */}
+    <div className="all-classes-container"> 
       <input
         type="text"
         placeholder="Search by name or type"
@@ -37,9 +37,9 @@ export default function Search() {
       />
       <button onClick={handleSearch}>Search</button>
 
-      <ul className="class-grid"> {/* Add the desired class name */}
+      <ul className="class-grid"> 
         {searchResults.map(item => (
-          <li key={item.id} className="class-card"> {/* Add the desired class name */}
+          <li key={item.id} className="class-card"> 
             {item.name}
             {item.description} - <img src={Images[item.image]} alt="Response image" />
           </li>
