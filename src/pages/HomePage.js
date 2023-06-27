@@ -6,10 +6,12 @@ import '../CSS/Main.css';
 
 function HomePage() {
   return (
-    <div className="homepage">
+    <div className="homepage-container">
       <Header />
-      <Hero />
-      <Footer />
+      <div className="content-container">
+        <Hero />
+        <Footer />
+      </div>
     </div>
   );
 }

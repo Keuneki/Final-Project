@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../CSS/Search.css';
 import clasess from '../API/classes.json';
 import elements from '../API/elements.json';
 import magic from '../API/magic.json';
 import Images from '../images/index.js';
+import '../CSS/Search.css';
 
 export default function Search() {
     const [searchTerm, setSearchTerm] = useState('');

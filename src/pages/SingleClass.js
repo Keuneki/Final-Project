@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const SingleClass = ({ match }) => {
   const classId = match.params.id;
-  const selectedClass =  classesData.classes.find((cls) => cls.id === classId);
+  const selectedClass = classesData.classes.find((cls) => cls.id === classId);
 
   if (!selectedClass) {
     return <div>Class not found</div>;
@@ -26,7 +26,9 @@ const SingleClass = ({ match }) => {
 
   return (
     <div>
-      <Header />
+      <div className="header-container">
+        <Header />
+      </div>
       <img src={Images[image]} alt={name} />
       <h1>{name}</h1>
       <p>{description}</p>

@@ -12,7 +12,9 @@ const MasterClass = () => {
 
   return (
     <div className="all-classes-container">
-      <Header />
+      <div className="header-container">
+        <Header />
+      </div>
       <h1 className="class-title">Master Classes</h1>
       <div className="class-grid">
         {masterClasses.map((cls) => (

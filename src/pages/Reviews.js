@@ -4,6 +4,8 @@ import Header from "../components/Header.js";
 import reviewsData from "../API/reviews.json";
 import Footer from "../components/Footer.js";
 
+import '../CSS/Main.css';
+
 const Review = () => {
   const [reviews, setReviews] = useState([]);
   const [editReviewId, setEditReviewId] = useState(null);
@@ -42,7 +44,6 @@ const Review = () => {
       setReviewText("");
       setName("");
       setCountry("");
-
     }
   };
 
@@ -93,7 +94,7 @@ const Review = () => {
   };
 
   useEffect(() => {
-      setDisplayedReviews(reviews.slice(0, reviewsPerPage));
+    setDisplayedReviews(reviews.slice(0, reviewsPerPage));
   }, [reviews, reviewsPerPage]);
 
   useEffect(() => {
@@ -102,7 +103,9 @@ const Review = () => {
 
   return (
     <div>
-      <Header />
+      <div className="header-container">
+        <Header />
+      </div>
       <h2>Reviews</h2>
       <form onSubmit={editReviewId ? handleReviewUpdate : handleReviewSubmit}>
         <input

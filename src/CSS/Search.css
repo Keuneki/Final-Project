@@ -1,38 +1,89 @@
-.Search {
-  margin-bottom: 20px;
-}
-
-.Search input[type="text"] {
-  width: 300px;
-  padding: 10px;
+.container {
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 7px;
+  padding: 12px;
 }
 
-.Search button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.Search ul {
-  list-style-type: none;
+.container ul {
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.Search li {
+.container li {
+  position: relative;
   margin-bottom: 10px;
-  font-size: 16px;
 }
 
-.Search img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.container a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 12px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.container ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  display: none;
+  z-index: 1;
+}
+
+.container li:hover > ul {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .container ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container li {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .container a {
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+
+  .container a:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .container ul ul {
+    position: static;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
 }

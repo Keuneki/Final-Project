@@ -12,7 +12,9 @@ const BasicClass = () => {
 
   return (
     <div className="all-classes-container">
-      <Header />
+      <div className="header-container">
+        <Header />
+      </div>
       <h1 className="class-title">Basic Classes</h1>
       <div className="class-grid">
         {basicClasses.map((cls) => (

@@ -10,15 +10,10 @@ function Hero() {
         <Search />
       </div>
       <div className="hero__right">
-        <img
-          className="hero__image"
-          src={heroImage}
-          alt="Hero Image"
-        />
+        <img className="hero__image" src={heroImage} alt="Hero Image" />
       </div>
     </div>
   );
 }
 
 export default Hero;
-

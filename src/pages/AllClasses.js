@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import '../CSS/Main.css';
 import Footer from '../components/Footer';
 
-const AlClasses = () => {
+const AllClasses = () => {
   const classesByType = {
     basic: [],
     advanced: [],
@@ -19,7 +19,9 @@ const AlClasses = () => {
 
   return (
     <div className="all-classes-container">
-      <Header />
+      <div className="header-container">
+        <Header />
+      </div>
       <h1>All Classes</h1>
       <h2>Basic</h2>
       <div className="class-grid">
@@ -61,4 +63,4 @@ const AlClasses = () => {
   );
 };
 
-export default AlClasses;
+export default AllClasses;

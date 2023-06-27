@@ -19,7 +19,9 @@ const SingleElement = () => {
 
   return (
     <div>
-      <Header />
+      <div className="header-container">
+        <Header />
+      </div>
       <img src={element.image} alt={element.name} />
       <h2>{element.name}</h2>
       <p>{element.description}</p>

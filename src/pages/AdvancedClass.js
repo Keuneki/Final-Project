@@ -4,7 +4,6 @@ import classesData from '../API/classes.json';
 import Images from '../images/index.js';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
 import '../CSS/Main.css';
 
 const AdvancedClass = () => {
@@ -12,7 +11,9 @@ const AdvancedClass = () => {
 
   return (
     <div className="all-classes-container">
-      <Header />
+      <div className="header-container">
+        <Header />
+      </div>
       <h1 className="class-title">Advanced Classes</h1>
       <div className="class-grid">
         {advancedClasses.map((cls) => (

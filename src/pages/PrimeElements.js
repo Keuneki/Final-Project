@@ -7,21 +7,26 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const PrimeElements = () => {
-
   const primeElements = elementsData.elements.filter(
     (element) => element.type === 'prime'
   );
 
   return (
-    <div>  
-    <Header />
-      <h2>Prime Elements</h2>
-      {primeElements.map((element) => (
-        <Link key={element.id} to={`/element/${element.id}`}>
-          <img src={Images[element.image]} alt={element.name} />
-          <p>{element.name}</p>
-        </Link>
-      ))}
+    <div>
+      <div className="header-container">
+        <Header />
+      </div>
+      <div className="all-magic-container">
+        <h2>Prime Elements</h2>
+        <div className="class-grid">
+          {primeElements.map((element) => (
+            <Link key={element.id} to={`/element/${element.id}`} className="class-card">
+              <img src={Images[element.image]} alt={element.name} />
+              <p>{element.name}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
       <Footer />
     </div>
   );
