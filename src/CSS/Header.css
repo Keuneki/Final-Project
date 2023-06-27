@@ -16,7 +16,7 @@
 }
 
 .logo img {
-  max-width: 200px;
+  max-width: 175px;
   max-height: 150px;
   transition: transform 0.3s, filter 0.3s;
 }
@@ -24,6 +24,7 @@
 .logo:hover img {
   transform: scale(1.2);
   filter: brightness(150%);
+  filter: hue-rotate(180deg);
 }
 
 .navigation-menu {
@@ -75,8 +76,8 @@
   }
 
   .logo img {
-    max-width: 250px;
-    max-height: 175px;
+    max-width: 175px;
+    max-height: 150px;
   }
 
   .navigation-menu {

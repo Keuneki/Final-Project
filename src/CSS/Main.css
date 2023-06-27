@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200;500&display=swap');
+
 .all-classes-container,
 .all-magic-container,
 .all-elements-container {
@@ -21,7 +23,7 @@
 }
 
 .review-column {
-  width: calc(33.33% - 20px); /* Adjust the width as needed */
+  width: calc(33.33% - 20px); 
   margin: 10px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -29,7 +31,7 @@
 
 .review-column img {
   width: 100%;
-  max-width: 150px; /* Adjust the image size as needed */
+  max-width: 150px; 
   height: auto;
   margin-bottom: 10px;
 }
@@ -85,6 +87,24 @@ ul ul {
 
 li:hover > ul {
   display: block;
+}
+
+body {
+  font-family: sans-serif; 
+}
+
+h1, h2, h3 {
+  font-family: 'Grenze Gotisch', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, darkred, green ); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 320px) {
