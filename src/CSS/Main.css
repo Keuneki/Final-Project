@@ -38,7 +38,6 @@
   margin-right: 5px;
 }
 
-
 nav {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
@@ -88,7 +87,6 @@ li:hover > ul {
   display: block;
 }
 
-/* Mobile (320px) */
 @media screen and (max-width: 320px) {
   .class-grid,
   .magic-grid {
@@ -97,7 +95,6 @@ li:hover > ul {
   }
 }
 
-/* Mobile (481px) */
 @media screen and (min-width: 321px) and (max-width: 481px) {
   .class-grid,
   .magic-grid {
@@ -106,7 +103,6 @@ li:hover > ul {
   }
 }
 
-/* Tablet (768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .class-grid,
   .magic-grid {
@@ -115,7 +111,6 @@ li:hover > ul {
   }
 }
 
-/* Desktop (1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .class-grid,
   .magic-grid {
@@ -124,7 +119,6 @@ li:hover > ul {
   }
 }
 
-/* Desktop (768px) */
 @media screen and (min-width: 768px) {
   .class-grid,
   .magic-grid {
@@ -169,5 +163,3 @@ li:hover > ul {
     margin-top: 10px;
   }
 }
-
-
