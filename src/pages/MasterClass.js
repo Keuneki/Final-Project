@@ -12,7 +12,7 @@ const MasterClass = () => {
 
   return (
     <div className="all-classes-container">
-      <div className="header-container">
+      <div className="header">
         <Header />
       </div>
       <h1 className="class-title">Master Classes</h1>

@@ -19,7 +19,7 @@ const AllClasses = () => {
 
   return (
     <div className="all-classes-container">
-      <div className="header-container">
+      <div className="header">
         <Header />
       </div>
       <h1>All Classes</h1>

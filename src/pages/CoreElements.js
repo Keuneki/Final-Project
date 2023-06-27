@@ -13,7 +13,7 @@ const CoreElements = () => {
 
   return (
     <div>
-      <div className="header-container">
+      <div className="header">
         <Header />
       </div>
       <div className="all-elements-container">

@@ -27,7 +27,7 @@ const SingleClass = () => {
 
   return (
     <div>
-      <div className="header-container">
+      <div className="header">
         <Header />
       </div>
       <img src={Images[image]} alt={name} />

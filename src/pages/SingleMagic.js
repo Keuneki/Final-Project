@@ -16,7 +16,7 @@ const SingleMagic = () => {
 
   return (
     <div>
-      <div className="header-container">
+      <div className="header">
         <Header />
       </div>
       <img src={Images[magic.image]} alt={magic.name} />

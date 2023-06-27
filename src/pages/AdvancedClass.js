@@ -10,12 +10,14 @@ const AdvancedClass = () => {
   const advancedClasses = classesData.classes.filter((cls) => cls.type === 'advanced');
 
   return (
-    <div className="all-classes-container">
-      <div className="header-container">
+
+<div>
+      <div className="header">
         <Header />
-      </div>
-      <h1 className="class-title">Advanced Classes</h1>
-      <div className="class-grid">
+        </div>
+        <div className="all-classes-container">
+           <h1 className="class-title">Advanced Classes</h1>
+        <div className="class-grid">
         {advancedClasses.map((cls) => (
           <Link to={`/class/${cls.id}`} key={cls.id}>
             <div className="class-card">
@@ -27,6 +29,7 @@ const AdvancedClass = () => {
       </div>
       <Footer />
     </div>
+  </div>
   );
 };
 

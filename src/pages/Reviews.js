@@ -103,7 +103,7 @@ const Review = () => {
 
   return (
     <div>
-      <div className="header-container">
+      <div className="header">
         <Header />
       </div>
       <h2>Reviews</h2>

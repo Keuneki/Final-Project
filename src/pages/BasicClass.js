@@ -12,7 +12,7 @@ const BasicClass = () => {
 
   return (
     <div className="all-classes-container">
-      <div className="header-container">
+      <div className="headeR">
         <Header />
       </div>
       <h1 className="class-title">Basic Classes</h1>

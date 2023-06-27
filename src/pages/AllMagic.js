@@ -12,7 +12,7 @@ const AllMagic = () => {
 
   return (
     <div className="all-magic-container">
-      <div className="header-container">
+      <div className="header">
         <Header />
       </div>
       <div className="row">

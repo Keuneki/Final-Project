@@ -16,7 +16,7 @@ const AllElements = () => {
 
   return (
     <div className="all-elements-container">
-      <div className="header-container">
+      <div className="header">
         <Header />
       </div>
       <div>
