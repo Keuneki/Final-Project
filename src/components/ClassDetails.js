@@ -17,7 +17,6 @@ const ClassDetails = () => {
       <p>{classData.description}</p>
       <p>Role: {classData.role}</p>
       <p>Type: {classData.type}</p>
-      {/* Render additional class details as needed */}
     </div>
   );
 };

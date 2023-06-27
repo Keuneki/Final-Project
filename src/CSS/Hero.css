@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px; 
+  padding: 20px;
   text-align: center;
 }
 
@@ -40,5 +40,29 @@
   .hero__right {
     margin-top: 1rem;
     justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__image {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__image {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 481px) {
+  .hero__image {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero__image {
+    max-width: 40%;
   }
 }

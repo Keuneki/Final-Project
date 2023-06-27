@@ -7,7 +7,6 @@ import SingleMagic from './pages/SingleMagic';
 import PureMagic from './pages/PureMagic';
 import MixedMagic from './pages/MixedMagic';
 import AllClasses from './pages/AllClasses';
-import ClassDetails from './components/ClassDetails';
 import BasicClass from './pages/BasicClass';
 import AdvancedClass from './pages/AdvancedClass';
 import MasterClass from './pages/MasterClass';
@@ -29,9 +28,7 @@ const App = () => {
         <Route path="/pure-magic" element={<PureMagic />} />
         <Route path="/mixed-magic" element={<MixedMagic />} />
         <Route path="/classes" element={<AllClasses />} />
-        <Route path="/class/:classId" element={<ClassDetails />}>
-          <Route index element={<SingleClass />} />
-        </Route>
+        <Route path="/class/:id" element={<SingleClass />} />
         <Route path="/basic-classes" element={<BasicClass />} />
         <Route path="/advanced-classes" element={<AdvancedClass />} />
         <Route path="/master-classes" element={<MasterClass />} />

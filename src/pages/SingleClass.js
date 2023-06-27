@@ -1,13 +1,14 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import classesData from '../API/classes.json';
 import Images from '../images/index.js';
-import Header from '../components/Header';
 import '../CSS/Main.css';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const SingleClass = ({ match }) => {
-  const classId = match.params.id;
-  const selectedClass = classesData.classes.find((cls) => cls.id === classId);
+const SingleClass = () => {
+  const { id } = useParams();
+  const selectedClass = classesData.classes.find((cls) => cls.id === parseInt(id, 10));
 
   if (!selectedClass) {
     return <div>Class not found</div>;
