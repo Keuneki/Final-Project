@@ -15,6 +15,30 @@
 
 }
 
+.review-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review-column {
+  width: calc(33.33% - 20px); /* Adjust the width as needed */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.review-column img {
+  width: 100%;
+  max-width: 150px; /* Adjust the image size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.review-buttons button {
+  margin-right: 5px;
+}
+
+
 nav {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
@@ -145,3 +169,5 @@ li:hover > ul {
     margin-top: 10px;
   }
 }
+
+

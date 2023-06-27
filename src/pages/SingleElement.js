@@ -22,7 +22,7 @@ const SingleElement = () => {
       <div className="header-container">
         <Header />
       </div>
-      <img src={element.image} alt={element.name} />
+      <img src={Images[element.image]} alt={element.name} />
       <h2>{element.name}</h2>
       <p>{element.description}</p>
       <h3>Strong Against</h3>

@@ -4,7 +4,7 @@ import Header from "../components/Header.js";
 import reviewsData from "../API/reviews.json";
 import Footer from "../components/Footer.js";
 
-import '../CSS/Main.css';
+import "../CSS/Main.css";
 
 const Review = () => {
   const [reviews, setReviews] = useState([]);
@@ -143,20 +143,22 @@ const Review = () => {
           <option value={50}>50</option>
         </select>
       </div>
-      <ul>
+      <div className="review-columns">
         {displayedReviews.map((review) => (
-          <li key={review.id}>
+          <div key={review.id} className="review-column">
             <img src={Images[review.image]} alt="Profile Pic" />
             <p>{review.name}</p>
             <p>{review.country}</p>
             <p>{review.description}</p>
-            <button onClick={() => handleReviewEdit(review.id)}>Edit</button>
-            <button onClick={() => handleReviewDelete(review.id)}>
-              Delete
-            </button>
-          </li>
+            <div className="review-buttons">
+              <button onClick={() => handleReviewEdit(review.id)}>Edit</button>
+              <button onClick={() => handleReviewDelete(review.id)}>
+                Delete
+              </button>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
       <Footer />
     </div>
   );
