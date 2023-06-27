@@ -29,7 +29,7 @@ const App = () => {
         <Route path="/mixed-magic" element={<MixedMagic />} />
         <Route path="/classes" element={<AllClasses />} />
         <Route path="/class/:id" element={<SingleClass />} />
-        <Route path="/basic-classes" element={<BasicClass />} />
+        <Route path="/classes/basic" element={<BasicClass />} />
         <Route path="/advanced-classes" element={<AdvancedClass />} />
         <Route path="/master-classes" element={<MasterClass />} />
         <Route path="/reviews" element={<Reviews />} /> 

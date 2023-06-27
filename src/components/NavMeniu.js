@@ -10,7 +10,7 @@ const NavMenu = () => {
           <Link to="/classes">Classes</Link>
           <ul>
             <li>
-              <Link to="/basic-classes">Basic Classes</Link>
+              <Link to="/classes/basic">Basic Classes</Link>
             </li>
             <li>
               <Link to="/advanced-classes">Advanced Classes</Link>
