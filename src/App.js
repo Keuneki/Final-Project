@@ -25,16 +25,16 @@ const App = () => {
         <Route path="/element/:id" element={<SingleElement />} />
         <Route exact path="/magic" element={<AllMagic />} />
         <Route path="/magic/:id" element={<SingleMagic />} />
-        <Route path="/pure-magic" element={<PureMagic />} />
-        <Route path="/mixed-magic" element={<MixedMagic />} />
+        <Route path="/magic/pure" element={<PureMagic />} />
+        <Route path="/magic/mixed" element={<MixedMagic />} />
         <Route path="/classes" element={<AllClasses />} />
         <Route path="/class/:id" element={<SingleClass />} />
-        <Route path="/basic-classes" element={<BasicClass />} />
-        <Route path="/advanced-classes" element={<AdvancedClass />} />
-        <Route path="/master-classes" element={<MasterClass />} />
+        <Route path="/classes/basic" element={<BasicClass />} />
+        <Route path="/classes/advanced" element={<AdvancedClass />} />
+        <Route path="/classes/master" element={<MasterClass />} />
         <Route path="/reviews" element={<Reviews />} /> 
-        <Route path="/core-elements" element={<CoreElements />} />
-        <Route path="/prime-elements" element={<PrimeElements />} />
+        <Route path="/elements/core" element={<CoreElements />} />
+        <Route path="/elements/prime" element={<PrimeElements />} />
       </Routes>
     </Router>
   );

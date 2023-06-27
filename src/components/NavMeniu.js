@@ -10,13 +10,13 @@ const NavMenu = () => {
           <Link to="/classes">Classes</Link>
           <ul>
             <li>
-              <Link to="/basic-classes">Basic Classes</Link>
+              <Link to="/classes/basic">Basic Classes</Link>
             </li>
             <li>
-              <Link to="/advanced-classes">Advanced Classes</Link>
+              <Link to="/classes/advanced">Advanced Classes</Link>
             </li>
             <li>
-              <Link to="/master-classes">Master Classes</Link>
+              <Link to="/classes/master">Master Classes</Link>
             </li>
           </ul>
         </li>
@@ -24,10 +24,10 @@ const NavMenu = () => {
           <Link to="/elements">Elements</Link>
           <ul>
             <li>
-              <Link to="/core-elements">Core Elements</Link>
+              <Link to="/elements/core">Core Elements</Link>
             </li>
             <li>
-              <Link to="/prime-elements">Prime Elements</Link>
+              <Link to="/elements/prime">Prime Elements</Link>
             </li>
           </ul>
         </li>
@@ -35,10 +35,10 @@ const NavMenu = () => {
           <Link to="/magic">Magic</Link>
           <ul>
             <li>
-              <Link to="/pure-magic">Pure Magic</Link>
+              <Link to="/magic/pure">Pure Magic</Link>
             </li>
             <li>
-              <Link to="/mixed-magic">Mixed Magic</Link>
+              <Link to="/magic/mixed">Mixed Magic</Link>
             </li>
           </ul>
         </li>
